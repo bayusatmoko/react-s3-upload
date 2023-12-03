@@ -8,15 +8,15 @@ function App() {
   // Function to upload file to s3
   const uploadFile = async () => {
     // S3 Bucket Name
-    const S3_BUCKET = "bucket-name";
+    const S3_BUCKET = "songssongs";
 
     // S3 Region
-    const REGION = "region";
+    const REGION = "ap-southeast-1";
 
     // S3 Credentials
     AWS.config.update({
-      accessKeyId: "youraccesskeyhere",
-      secretAccessKey: "yoursecretaccesskeyhere",
+      accessKeyId: "**",
+      secretAccessKey: "**",
     });
     const s3 = new AWS.S3({
       params: { Bucket: S3_BUCKET },
@@ -29,6 +29,7 @@ function App() {
       Bucket: S3_BUCKET,
       Key: file.name,
       Body: file,
+      ACL: "public-read"
     };
 
     // Uploading file to s3

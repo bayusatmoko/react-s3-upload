@@ -1,0 +1,4 @@
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/ManageCorsUsing.html#cors-allowed-origin
+Setting ACL to be enabled
+CACHE IT WITH CLOUDFRONT -> https://www.devonblog.com/none/edge-caching-s3-objects-with-cloudfront/
+https://maxrohde.com/2022/06/10/solving-error-creating-cloudfront-distribution-accessdenied-your-account-must-be-verified
